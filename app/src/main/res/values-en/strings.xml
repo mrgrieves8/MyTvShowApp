@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">TV Shows Info</string>
+    <string name="tv_show_image">Image</string>
+    <string name="tv_show_name">Name</string>
+    <string name="tv_show_genre">Genre</string>
+    <string name="tv_show_year">Year</string>
+    <string name="tv_show_synopsis">Synopsis</string>
+    <string name="favorites">My Favorites</string>
+    <string name="app_header">TV Shows Info</string>
+    <string name="search_show">Search Show</string>
+    <string name="add_new_show">Add New Show</string>
+    <string name="add_tv_show">Add Show to Favorites</string>
+    <string name="tv_show_img_url">Image URL</string>
+    <string name="delete_tv_show">Remove from Favorites</string>
+    <string name="empty_favorites">You don\'t have any favorite shows</string>
+    <string name="delete_prompt">Are you sure you want to delete</string>
+    <string name="btn_invalid_input_prompt">Invalid Input</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_cancel">CANCEL</string>
+    <string name="btn_confirm">OK</string>
+    <string name="btn_confirmation_title">Delete Confirmation</string>
+    <string name="err_show_name"> - Name must be non-empty and less than 100 characters.</string>
+    <string name="err_show_genre"> - Genre must be non-empty and less than 50 characters.</string>
+    <string name="err_show_desc"> - Description must be non-empty and less than 500 characters.</string>
+    <string name="err_show_year"> - Invalid Year.</string>
+    <string name="err_show_url"> - Make sure the URL is not empty and a valid URL</string>
+</resources>

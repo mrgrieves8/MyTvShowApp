@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Declare any variables you want to use in the layout here. -->
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".AddTvShowFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/add_new_show"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@id/et_tv_show_name"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <EditText
+                android:id="@+id/et_tv_show_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_show_name"
+                android:inputType="text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header" />
+
+            <EditText
+                android:id="@+id/et_tv_show_genre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_show_genre"
+                android:inputType="text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_tv_show_name" />
+
+            <EditText
+                android:id="@+id/et_tv_show_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_show_synopsis"
+                android:inputType="textMultiLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_tv_show_genre" />
+
+
+            <EditText
+                android:id="@+id/et_tv_show_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_show_year"
+                android:inputType="number"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_tv_show_description" />
+
+            <EditText
+                android:id="@+id/et_tv_show_img_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_show_img_url"
+                android:inputType="textUri"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_tv_show_year" />
+
+            <Button
+                android:id="@+id/btn_add_tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_tv_show"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_tv_show_img_url" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

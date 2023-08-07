@@ -1,0 +1,67 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/landingPageFragment">
+
+    <fragment
+        android:id="@+id/landingPageFragment"
+        android:name="com.example.tvrawr.ui.LandingPageFragment"
+        tools:layout="@layout/fragment_landing_page">
+
+        <action
+            android:id="@+id/action_landingPageFragment_to_tvShowDetailFragment"
+            app:destination="@id/tvShowDetailFragment">
+            <argument
+                android:name="tvShowId"
+                app:argType="integer" />
+        </action>
+
+        <action
+            android:id="@+id/action_landingPageFragment_to_addTvShowFragment"
+            app:destination="@id/addTvShowFragment" />
+
+        <action
+            android:id="@+id/action_landingPageFragment_to_searchShowFragment"
+            app:destination="@id/searchShowFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tvShowDetailFragment"
+        android:name="com.example.tvrawr.ui.TvShowDetailFragment"
+        tools:layout="@layout/fragment_tv_show_detail">
+        <argument
+            android:name="tvShowId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addTvShowFragment"
+        android:name="com.example.tvrawr.ui.AddTvShowFragment"
+        tools:layout="@layout/fragment_add_tv_show" />
+
+    <fragment
+        android:id="@+id/searchShowFragment"
+        android:name="com.example.tvrawr.ui.SearchShowFragment"
+        tools:layout="@layout/fragment_search_show">
+
+        <action
+            android:id="@+id/action_searchShowFragment_to_landingPageFragment"
+            app:destination="@id/landingPageFragment" />
+
+        <action
+            android:id="@+id/action_searchShowFragment_to_tvShowDetailFragment"
+            app:destination="@id/tvShowDetailFragment">
+            <argument
+                android:name="tvShowId"
+                app:argType="integer" />
+        </action>
+
+    </fragment>
+
+
+
+
+    <!-- Add more fragments and connections between them as needed -->
+
+</navigation>

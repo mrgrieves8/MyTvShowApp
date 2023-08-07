@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">מידע על TV</string>
+    <string name="tv_show_image">תמונת הסדרה</string>
+    <string name="tv_show_name">שם הסדרה</string>
+    <string name="tv_show_genre">ז\'אנר הסדרה</string>
+    <string name="tv_show_year">שנת פרסום</string>
+    <string name="tv_show_synopsis">תקציר</string>
+    <string name="favorites">המועדפים שלי</string>
+    <string name="search_show">חפש סדרה</string>
+    <string name="app_header">מידע על תוכניות טלוויזיה</string>
+    <string name="add_new_show">הוסף סדרה חדשה</string>
+    <string name="add_tv_show">הוסף למועדפים</string>
+    <string name="tv_show_img_url">לינק לתמונה</string>
+    <string name="delete_tv_show">הסר מהמועדפים</string>
+    <string name="empty_favorites">אין לך סדרות במועדפים</string>
+    <string name="delete_prompt">האם אתה בטוח שברצונך למחוק את</string>
+    <string name="btn_invalid_input_prompt">קלט שגוי</string>
+    <string name="btn_delete">מחק</string>
+    <string name="btn_cancel">בטל</string>
+    <string name="btn_confirm">אשר</string>
+    <string name="btn_confirmation_title">אישור מחיקה</string>
+    <string name="err_show_name"> - השם חייב להיות לא ריק ועד 100 תווים</string>
+    <string name="err_show_genre"> - הז\'אנר חייב להיות לא ריק ועד 50 תווים</string>
+    <string name="err_show_desc"> - התיאור חייב להיות לא ריק ועד 500 תווים</string>
+    <string name="err_show_year"> - השנה חייבת להיות חוקית</string>
+    <string name="err_show_url"> - וודא כי הלינק אינו ריק ומכיל כתובת URL תקינה</string>
+</resources>
